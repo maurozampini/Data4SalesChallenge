@@ -4,7 +4,6 @@ using Data4SalesChallenge.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddSingleton<DBContext>();
 builder.Services.AddScoped<IStartupRepository, StartupRepository>();
 builder.Services.AddScoped<IFilmsRepository, FilmsRepository>();
@@ -15,7 +14,6 @@ builder.Services.AddScoped<IStarshipsRepository, StarshipsRepository>();
 builder.Services.AddScoped<IVehiclesRepository, VehiclesRepository>();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -25,7 +23,6 @@ DotEnv.Load(dotenv);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

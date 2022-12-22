@@ -30,18 +30,6 @@ namespace Data4SalesChallenge.Model
             return GetType().GetCustomAttribute<TableAttribute>()?.Name ?? throw new Exception("Falta declarar el atributo Table");
         }
 
-        //public virtual string CreateStatement
-        //{
-        //    get
-        //    {
-        //        string createQuery = "CREATE TABLE Films (PersonID int, LastName varchar(255), FirstName varchar(255), Address varchar(255), City varchar(255));";
-
-        //        return string.Format("CREATE TABLE IF NOT EXISTS [{0}] ({1})",
-        //            TableName,
-        //            GetDelimitedSafeFieldList(", "));
-        //    }
-        //}
-
         public virtual string DropStatement()
         {
             return string.Format("DROP TABLE IF EXISTS {0};",

@@ -9,7 +9,7 @@ Este proyecto fue creado con .Net Core 6.
 
 # Requerimientos
 - [Microsoft Visual Studio 2022](https://visualstudio.microsoft.com/es/downloads/)
-- Crear los archivos .env y .settings en las carpetas indicadas en la puesta en marcha
+- Crear los archivos .env y settings.json en las carpetas indicadas en la puesta en marcha
 
 # Puesta en marcha
 
